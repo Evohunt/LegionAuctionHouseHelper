@@ -47,7 +47,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Update Database">
+          <Tab text="Database">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -66,7 +66,7 @@
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="23.0" layoutY="134.0" prefHeight="22.0" prefWidth="108.0" text="Fjarnskaggl" textFill="#bcc600">
+                        <Label fx:id="fjarnskagg_database" layoutX="23.0" layoutY="134.0" prefHeight="22.0" prefWidth="108.0" text="Fjarnskaggl" textFill="#bcc600">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
@@ -91,36 +91,47 @@
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="226.0" layoutY="49.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="77.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="105.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="133.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="220.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="248.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="276.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField layoutX="226.0" layoutY="304.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="starlight_rose_price" layoutX="226.0" layoutY="49.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="aethril_price" layoutX="226.0" layoutY="77.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="foxflower_price" layoutX="226.0" layoutY="105.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="fjarnskaggl_price" layoutX="226.0" layoutY="133.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="countless_armies_price" layoutX="226.0" layoutY="220.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="whispered_pact_price" layoutX="226.0" layoutY="248.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="seventh_demon_price" layoutX="226.0" layoutY="276.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="ten_thousand_scars_price" layoutX="226.0" layoutY="304.0" prefHeight="25.0" prefWidth="108.0" />
                         <Label layoutX="23.0" layoutY="389.0" prefHeight="22.0" prefWidth="108.0" text="Obliterum" textFill="#007208">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="226.0" layoutY="388.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="obliterum_price" layoutX="226.0" layoutY="388.0" prefHeight="25.0" prefWidth="108.0" />
                         <Label layoutX="23.0" layoutY="162.0" prefHeight="22.0" prefWidth="108.0" text="Dreamleaf" textFill="#2be102">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="226.0" layoutY="161.0" prefHeight="25.0" prefWidth="108.0" />
-                        <Button layoutX="23.0" layoutY="441.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: green;" text="Update Database" textFill="WHITE">
+                        <TextField fx:id="dreamleaf_price" layoutX="226.0" layoutY="161.0" prefHeight="25.0" prefWidth="108.0" />
+                        <Button fx:id="btn_update_database" layoutX="23.0" layoutY="441.0" mnemonicParsing="false" onAction="#UpdateDatabase" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: green;" text="Update Database" textFill="WHITE">
                            <font>
                               <Font name="Candara Bold" size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="23.0" layoutY="495.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: blue;" text="Check Database" textFill="WHITE">
+                        <Button fx:id="btn_check_database" layoutX="23.0" layoutY="495.0" mnemonicParsing="false" onAction="#CheckDatabase" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: blue;" text="Check Database" textFill="WHITE">
                            <font>
                               <Font name="Candara Bold" size="14.0" />
                            </font>
                         </Button>
+                        <TextField fx:id="starlight_rose_database" editable="false" layoutX="384.0" layoutY="49.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <Label fx:id="database_update_label" alignment="CENTER" layoutX="228.0" layoutY="449.0" prefHeight="29.0" prefWidth="245.0" textFill="#1fa40d" />
+                        <TextField fx:id="aethril_database" editable="false" layoutX="384.0" layoutY="77.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="foxflower_database" editable="false" layoutX="384.0" layoutY="105.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="fjarnskaggl_database" editable="false" layoutX="384.0" layoutY="133.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="dreamleaf_database" editable="false" layoutX="384.0" layoutY="161.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="countless_armies_database" editable="false" layoutX="384.0" layoutY="220.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="whispered_pact_database" editable="false" layoutX="384.0" layoutY="248.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="seventh_demon_database" editable="false" layoutX="384.0" layoutY="276.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="ten_thousand_scars_database" editable="false" layoutX="384.0" layoutY="304.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <TextField fx:id="obliterum_database" editable="false" layoutX="384.0" layoutY="388.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
                      </children>
                   </AnchorPane>
             </content>
