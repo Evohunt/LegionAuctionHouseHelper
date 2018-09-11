@@ -31,6 +31,17 @@ public class MainController {
     public TextField ten_thousand_scars_database;
     public TextField obliterum_database;
     public TextField fjarnskaggl_database;
+    public TextField starlight_rose_collected;
+    public TextField aethril_collected;
+    public TextField foxflower_collected;
+    public TextField fjarnskaggl_collected;
+    public TextField dreamleaf_collected;
+    public TextField obliterum_ash_collected;
+    public TextField undercut_value;
+    public Button btnCalculate;
+    public TextField flasks_minimum_profit;
+    public TextField flasks_maximum_profit;
+    public TextField raw_profit;
 
     public void UpdateDatabase(ActionEvent actionEvent) {
 
@@ -73,6 +84,21 @@ public class MainController {
         ten_thousand_scars_database.setText(Integer.toString(itemDatabase.getTen_thousand_scars_price()) + " G");
 
         obliterum_database.setText(Integer.toString(itemDatabase.getObliterum_price()) + " G");
+
+    }
+
+    public void Calculate(ActionEvent actionEvent) {
+
+        Materials materials = new Materials();
+
+        materials.setStarlight_rose_count(Integer.parseInt(starlight_rose_collected.getText()));
+        materials.setAethril_count(Integer.parseInt(aethril_collected.getText()));
+        materials.setFoxflower_count(Integer.parseInt(foxflower_collected.getText()));
+        materials.setDreamleaf_count(Integer.parseInt(dreamleaf_collected.getText()));
+        materials.setFjarnskaggl_count(Integer.parseInt(fjarnskaggl_collected.getText()));
+        materials.setObliterum_ash_count(Integer.parseInt(obliterum_ash_collected.getText()));
+
+        raw_profit.setText(Integer.toString(materials.calculateRawWithUndercut(Integer.parseInt(undercut_value.getText()))) + " G");
 
     }
 }
