@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import javax.xml.crypto.Data;
 
@@ -39,9 +41,15 @@ public class MainController {
     public TextField obliterum_ash_collected;
     public TextField undercut_value;
     public Button btnCalculate;
-    public TextField flasks_minimum_profit;
-    public TextField flasks_maximum_profit;
     public TextField raw_profit;
+    public TextField countless_armies_minimum;
+    public TextField countless_armies_maximum;
+    public TextField whispered_pact_minimum;
+    public TextField whispered_pact_maximum;
+    public TextField seventh_demon_minimum;
+    public TextField seventh_demon_maximum;
+    public TextField ten_thousand_scars_minimum;
+    public TextField ten_thousand_scars_maximum;
 
     public void UpdateDatabase(ActionEvent actionEvent) {
 
@@ -99,6 +107,8 @@ public class MainController {
         materials.setObliterum_ash_count(Integer.parseInt(obliterum_ash_collected.getText()));
 
         raw_profit.setText(Integer.toString(materials.calculateRawWithUndercut(Integer.parseInt(undercut_value.getText()))) + " G");
+
+
 
     }
 }
