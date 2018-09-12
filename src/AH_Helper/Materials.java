@@ -27,10 +27,47 @@ public class Materials {
         total += foxflower_count * (database.getFoxflower_price() - undercut);
         total += dreamleaf_count * (database.getDreamleaf_price() - undercut);
         total += fjarnskaggl_count * (database.getFjarnskaggl_price() - undercut);
-        total += (obliterum_ash_count / 100) * (database.getObliterum_price() - undercut);
 
         return total;
 
+    }
+
+    public int calculateObliterumProfit(int undercut) {
+
+        return (obliterum_ash_count / 100) * (database.getObliterum_price() - undercut);
+
+    }
+
+    public int calculateCountlessArmiesMinimum(int undercut) {
+        return Math.min(Math.min((starlight_rose_count / 7), (aethril_count / 10)), (foxflower_count / 10)) * (database.getCountless_armies_price() - undercut);
+    }
+
+    public int calculateCountlessArmiesMaximum(int undercut) {
+        return calculateCountlessArmiesMinimum(undercut) * 4;
+    }
+
+    public int calculateWhisperedPactMinimum(int undercut) {
+        return Math.min(Math.min((starlight_rose_count / 7), (fjarnskaggl_count / 10)), (dreamleaf_count / 10)) * (database.getWhispered_pact_price() - undercut);
+    }
+
+    public int calculateWhisperedPactMaximum(int undercut) {
+        return calculateWhisperedPactMinimum(undercut) * 4;
+    }
+
+    public int calculateSeventhDemonMinimum(int undercut) {
+        return Math.min(Math.min((starlight_rose_count / 7), (fjarnskaggl_count / 10)), (foxflower_count / 10)) * (database.getSeventh_demon_price() - undercut);
+    }
+
+    public int calculateSeventhDemonMaximum(int undercut) {
+        return calculateSeventhDemonMinimum(undercut) * 4;
+    }
+
+    public int calculateTenThousandScarsMinimum(int undercut) {
+        return Math.min(Math.min((starlight_rose_count / 7), (aethril_count / 10)), (dreamleaf_count / 10)) * (database.getSeventh_demon_price() - undercut);
+    }
+
+    public int calculateTenThousandScarsMaximum(int undercut) {
+        return calculateTenThousandScarsMinimum(undercut) * 4;
     }
 
     public int getStarlight_rose_count() {

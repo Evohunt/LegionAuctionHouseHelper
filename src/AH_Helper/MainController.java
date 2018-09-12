@@ -50,6 +50,7 @@ public class MainController {
     public TextField seventh_demon_maximum;
     public TextField ten_thousand_scars_minimum;
     public TextField ten_thousand_scars_maximum;
+    public TextField obliterum_profit;
 
     public void UpdateDatabase(ActionEvent actionEvent) {
 
@@ -108,7 +109,16 @@ public class MainController {
 
         raw_profit.setText(Integer.toString(materials.calculateRawWithUndercut(Integer.parseInt(undercut_value.getText()))) + " G");
 
+        obliterum_profit.setText(Integer.toString(materials.calculateObliterumProfit(Integer.parseInt(undercut_value.getText()))) + " G");
 
+        countless_armies_minimum.setText(Integer.toString(materials.calculateCountlessArmiesMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
+        countless_armies_maximum.setText(Integer.toString(materials.calculateCountlessArmiesMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        whispered_pact_minimum.setText(Integer.toString(materials.calculateWhisperedPactMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
+        whispered_pact_maximum.setText(Integer.toString(materials.calculateWhisperedPactMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        seventh_demon_minimum.setText(Integer.toString(materials.calculateSeventhDemonMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
+        seventh_demon_maximum.setText(Integer.toString(materials.calculateSeventhDemonMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        ten_thousand_scars_minimum.setText(Integer.toString(materials.calculateTenThousandScarsMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
+        ten_thousand_scars_maximum.setText(Integer.toString(materials.calculateTenThousandScarsMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
 
     }
 }
