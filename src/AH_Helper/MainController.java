@@ -51,6 +51,14 @@ public class MainController {
     public TextField ten_thousand_scars_minimum;
     public TextField ten_thousand_scars_maximum;
     public TextField obliterum_profit;
+    public Button starlight_rose_map_button;
+    public Button aethril_map_button;
+    public Button foxflower_map_button;
+    public Button fjarnskaggl_map_button;
+    public Button dreamleaf_map_button;
+    public ImageView gather_map;
+    public Label zone_map_name;
+
 
     public void UpdateDatabase(ActionEvent actionEvent) {
 
@@ -120,5 +128,31 @@ public class MainController {
         ten_thousand_scars_minimum.setText(Integer.toString(materials.calculateTenThousandScarsMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
         ten_thousand_scars_maximum.setText(Integer.toString(materials.calculateTenThousandScarsMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
 
+    }
+
+
+    public void starlightRoseMap(ActionEvent actionEvent) {
+        gather_map.setImage(new Image("/Media/starlight_rose_map.jpg"));
+        zone_map_name.setText("Suramar");
+    }
+
+    public void aethrilMap(ActionEvent actionEvent) {
+        gather_map.setImage(new Image("/Media/aethril_map.jpg"));
+        zone_map_name.setText("Aszuna");
+    }
+
+    public void foxflowerMap(ActionEvent actionEvent) {
+        gather_map.setImage(new Image("/Media/foxflower_map.jpg"));
+        zone_map_name.setText("Highmountain");
+    }
+
+    public void fjarnskagglMap(ActionEvent actionEvent) {
+        gather_map.setImage(new Image("/Media/fjarnskaggl_map.jpg"));
+        zone_map_name.setText("Stormheim");
+    }
+
+    public void dreamleafMap(ActionEvent actionEvent) {
+        gather_map.setImage(new Image("/Media/dreamleaf_map.jpg"));
+        zone_map_name.setText("Val'sharah");
     }
 }

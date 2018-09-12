@@ -272,7 +272,45 @@
             </Tab>
             <Tab text="Herb Routes">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="214.0" layoutY="27.0" prefHeight="33.0" prefWidth="273.0" text="Choose the herb you want to gather" textFill="#4d4d4d">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="starlight_rose_map_button" layoutX="47.0" layoutY="77.0" mnemonicParsing="false" onAction="#starlightRoseMap" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #00aaff;" text="Starlight Rose" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="aethril_map_button" layoutX="169.0" layoutY="77.0" mnemonicParsing="false" onAction="#aethrilMap" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #ff00dd;" text="Aethril" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="foxflower_map_button" layoutX="291.0" layoutY="77.0" mnemonicParsing="false" onAction="#foxflowerMap" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #e17603;" text="Foxflower" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="fjarnskaggl_map_button" layoutX="413.0" layoutY="77.0" mnemonicParsing="false" onAction="#fjarnskagglMap" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #bcc600;" text="Fjarnskaggl" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="dreamleaf_map_button" layoutX="535.0" layoutY="77.0" mnemonicParsing="false" onAction="#dreamleafMap" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #2be102;" text="Dreamleaf" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="gather_map" fitHeight="361.0" fitWidth="568.0" layoutX="67.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="zone_map_name" alignment="CENTER" layoutX="268.0" layoutY="134.0" prefHeight="33.0" prefWidth="164.0" textFill="#2f2d2d">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>
