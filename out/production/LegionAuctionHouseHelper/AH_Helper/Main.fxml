@@ -47,6 +47,51 @@
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
+                        <Label layoutX="25.0" layoutY="326.0" prefHeight="34.0" prefWidth="101.0" text="Instructions" textFill="#c33c02">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="370.0" prefHeight="20.0" prefWidth="652.0" text="     1. Updated database with current auction house prices from ingame.">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="390.0" prefHeight="20.0" prefWidth="652.0" text="     2. In the profit tab enter the amount of materials you have in your bag as well as the undercut value you want.">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="410.0" prefHeight="20.0" prefWidth="652.0" text="The currency used both in the database and in the calculation is gold.">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="430.0" prefHeight="20.0" prefWidth="652.0" text="     3.  The program will calculate the selling price for raw materials as well as the prices for the flasks that can be">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="450.0" prefHeight="20.0" prefWidth="652.0" text="made with the materials entered. Currenly the maximum price for a flask is calculated considering each cast 4">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="470.0" prefHeight="20.0" prefWidth="652.0" text="flasks are created (Rank 3 recipe). Custom number of maximum flasks may be implemented in future versions.">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="490.0" prefHeight="20.0" prefWidth="652.0" text="The obliterum price is displayed separately.">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="259.0" layoutY="276.0" prefHeight="20.0" prefWidth="183.0" text="Author: Evohunt" textFill="#008d07">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
             </content>
