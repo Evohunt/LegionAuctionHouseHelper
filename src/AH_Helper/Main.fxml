@@ -42,7 +42,7 @@
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="204.0" layoutY="256.0" prefHeight="20.0" prefWidth="293.0" text="Version: ALPHA">
+                        <Label alignment="CENTER" layoutX="204.0" layoutY="256.0" prefHeight="20.0" prefWidth="293.0" text="Version: BETA">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
@@ -72,22 +72,27 @@
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label layoutX="25.0" layoutY="450.0" prefHeight="20.0" prefWidth="652.0" text="made with the materials entered. Currenly the maximum price for a flask is calculated considering each cast 4">
-                           <font>
-                              <Font name="Arial Bold" size="12.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="25.0" layoutY="470.0" prefHeight="20.0" prefWidth="652.0" text="flasks are created (Rank 3 recipe). Custom number of maximum flasks may be implemented in future versions.">
-                           <font>
-                              <Font name="Arial Bold" size="12.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="25.0" layoutY="490.0" prefHeight="20.0" prefWidth="652.0" text="The obliterum price is displayed separately.">
+                        <Label layoutX="25.0" layoutY="450.0" prefHeight="20.0" prefWidth="652.0" text="made with the materials entered.">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
                         <Label alignment="CENTER" layoutX="259.0" layoutY="276.0" prefHeight="20.0" prefWidth="183.0" text="Author: Evohunt" textFill="#008d07">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="470.0" prefHeight="20.0" prefWidth="652.0" text="     4. At Max flasks enter the amount of flasks to be taken into consideration when calculatin the maximum profit">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="490.0" prefHeight="20.0" prefWidth="652.0" text="that can be made if that number of flasks is created at cast. If you don't have a Rank 3 recipes just put 1.">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="510.0" prefHeight="20.0" prefWidth="652.0" text="     5. Obliterum profit is displayed separately.">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
@@ -189,54 +194,54 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="148.0" layoutY="65.0" prefHeight="22.0" prefWidth="108.0" text="Starlight Rose" textFill="#00aaff">
+                        <Label layoutX="150.0" layoutY="46.0" prefHeight="22.0" prefWidth="108.0" text="Starlight Rose" textFill="#00aaff">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="91.0" prefHeight="22.0" prefWidth="108.0" text="Aethril" textFill="#ff00dd">
+                        <Label layoutX="150.0" layoutY="72.0" prefHeight="22.0" prefWidth="108.0" text="Aethril" textFill="#ff00dd">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="117.0" prefHeight="22.0" prefWidth="108.0" text="Foxflower" textFill="#e17603">
+                        <Label layoutX="150.0" layoutY="98.0" prefHeight="22.0" prefWidth="108.0" text="Foxflower" textFill="#e17603">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="143.0" prefHeight="22.0" prefWidth="108.0" text="Fjarnskaggl" textFill="#bcc600">
+                        <Label layoutX="150.0" layoutY="124.0" prefHeight="22.0" prefWidth="108.0" text="Fjarnskaggl" textFill="#bcc600">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="195.0" prefHeight="22.0" prefWidth="108.0" text="Obliterum Ash" textFill="#007208">
+                        <Label layoutX="150.0" layoutY="176.0" prefHeight="22.0" prefWidth="108.0" text="Obliterum Ash" textFill="#007208">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="169.0" prefHeight="22.0" prefWidth="108.0" text="Dreamleaf" textFill="#2be102">
+                        <Label layoutX="150.0" layoutY="150.0" prefHeight="22.0" prefWidth="108.0" text="Dreamleaf" textFill="#2be102">
                            <font>
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="starlight_rose_collected" layoutX="270.0" layoutY="66.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField fx:id="aethril_collected" layoutX="270.0" layoutY="92.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField fx:id="foxflower_collected" layoutX="270.0" layoutY="118.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField fx:id="fjarnskaggl_collected" layoutX="270.0" layoutY="144.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField fx:id="dreamleaf_collected" layoutX="270.0" layoutY="170.0" prefHeight="25.0" prefWidth="108.0" />
-                        <TextField fx:id="obliterum_ash_collected" layoutX="270.0" layoutY="196.0" prefHeight="25.0" prefWidth="108.0" />
-                        <Label layoutX="148.0" layoutY="33.0" prefHeight="22.0" prefWidth="176.0" text="Enter collected materials" textFill="#000203">
+                        <TextField fx:id="starlight_rose_collected" layoutX="272.0" layoutY="47.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="aethril_collected" layoutX="272.0" layoutY="73.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="foxflower_collected" layoutX="272.0" layoutY="99.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="fjarnskaggl_collected" layoutX="272.0" layoutY="125.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="dreamleaf_collected" layoutX="272.0" layoutY="151.0" prefHeight="25.0" prefWidth="108.0" />
+                        <TextField fx:id="obliterum_ash_collected" layoutX="272.0" layoutY="177.0" prefHeight="25.0" prefWidth="108.0" />
+                        <Label layoutX="150.0" layoutY="14.0" prefHeight="22.0" prefWidth="176.0" text="Enter collected materials" textFill="#000203">
                            <font>
                               <Font name="Calibri" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="235.0" prefHeight="22.0" prefWidth="108.0" text="Undercut Value" textFill="#ee0000">
+                        <Label layoutX="150.0" layoutY="216.0" prefHeight="22.0" prefWidth="108.0" text="Undercut Value" textFill="#ee0000">
                            <font>
                               <Font name="Arial Bold" size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="undercut_value" layoutX="270.0" layoutY="234.0" prefHeight="25.0" prefWidth="108.0" />
-                        <Button fx:id="btnCalculate" layoutX="419.0" layoutY="224.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: green;" text="CALCULATE" textFill="WHITE">
+                        <TextField fx:id="undercut_value" layoutX="272.0" layoutY="215.0" prefHeight="25.0" prefWidth="108.0" />
+                        <Button fx:id="btnCalculate" layoutX="421.0" layoutY="205.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: green;" text="CALCULATE" textFill="WHITE">
                            <font>
                               <Font name="Candara Bold" size="14.0" />
                            </font>
@@ -311,6 +316,12 @@
                            </font>
                         </Label>
                         <TextField fx:id="obliterum_profit" editable="false" layoutX="272.0" layoutY="527.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #CCD5D9;" />
+                        <Label layoutX="150.0" layoutY="244.0" prefHeight="22.0" prefWidth="108.0" text="Max flasks" textFill="#8f4100">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="max_flasks_count" layoutX="272.0" layoutY="243.0" prefHeight="25.0" prefWidth="108.0" />
                      </children>
                   </AnchorPane>
               </content>

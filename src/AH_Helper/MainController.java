@@ -2,6 +2,7 @@ package AH_Helper;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -58,6 +59,8 @@ public class MainController {
     public Button dreamleaf_map_button;
     public ImageView gather_map;
     public Label zone_map_name;
+    public Label fjarnskagg_database;
+    public TextField max_flasks_count;
 
 
     public void UpdateDatabase(ActionEvent actionEvent) {
@@ -120,13 +123,13 @@ public class MainController {
         obliterum_profit.setText(Integer.toString(materials.calculateObliterumProfit(Integer.parseInt(undercut_value.getText()))) + " G");
 
         countless_armies_minimum.setText(Integer.toString(materials.calculateCountlessArmiesMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
-        countless_armies_maximum.setText(Integer.toString(materials.calculateCountlessArmiesMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        countless_armies_maximum.setText(Integer.toString(materials.calculateCountlessArmiesMaximum(Integer.parseInt(undercut_value.getText()), Integer.parseInt(max_flasks_count.getText()))) + " G");
         whispered_pact_minimum.setText(Integer.toString(materials.calculateWhisperedPactMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
-        whispered_pact_maximum.setText(Integer.toString(materials.calculateWhisperedPactMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        whispered_pact_maximum.setText(Integer.toString(materials.calculateWhisperedPactMaximum(Integer.parseInt(undercut_value.getText()), Integer.parseInt(max_flasks_count.getText()))) + " G");
         seventh_demon_minimum.setText(Integer.toString(materials.calculateSeventhDemonMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
-        seventh_demon_maximum.setText(Integer.toString(materials.calculateSeventhDemonMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        seventh_demon_maximum.setText(Integer.toString(materials.calculateSeventhDemonMaximum(Integer.parseInt(undercut_value.getText()), Integer.parseInt(max_flasks_count.getText()))) + " G");
         ten_thousand_scars_minimum.setText(Integer.toString(materials.calculateTenThousandScarsMinimum(Integer.parseInt(undercut_value.getText()))) + " G");
-        ten_thousand_scars_maximum.setText(Integer.toString(materials.calculateTenThousandScarsMaximum(Integer.parseInt(undercut_value.getText()))) + " G");
+        ten_thousand_scars_maximum.setText(Integer.toString(materials.calculateTenThousandScarsMaximum(Integer.parseInt(undercut_value.getText()), Integer.parseInt(max_flasks_count.getText()))) + " G");
 
     }
 
